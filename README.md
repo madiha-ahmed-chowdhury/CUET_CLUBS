@@ -26,12 +26,14 @@ CUET CLUBS is a web platform that combines the various club websites under the o
 *bash
 Copy code*
 git clone https://github.com/yourusername/cuet-clubs.git
-I**nstall dependencies:**
+
+**Install dependencies:**
 
 *bash
 Copy code:*
 cd cuet-clubs
 npm install
+
 **Create a .env file in the root directory and add your environment variables:**
 
 *bash
@@ -39,6 +41,7 @@ Copy code:*
 PORT=3000
 MONGODB_URI=your-mongodb-uri
 JWT_SECRET=your-secret-key
+
 **Run the app:**
 
 *bash
