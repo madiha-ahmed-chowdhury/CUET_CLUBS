@@ -1,7 +1,7 @@
 ## CUET CLUBS
 CUET CLUBS is a web platform that combines the various club websites under the organization CUET (Chittagong University of Engineering & Technology). Built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript, the platform allows CUET clubs to create, manage, and display their own websites in a unified manner.
 
-###Features
+### Features
 **Club Admin Registration:** Club admins can sign up to create and manage their club's website.
 
 **Club Admin Login:** Once signed up, club admins can log in to update and edit their club information, including events, workshops, and more.
@@ -10,7 +10,7 @@ CUET CLUBS is a web platform that combines the various club websites under the o
 
 **Website Admin:** A dedicated website admin has the authority to add new clubs or delete existing clubs from the platform.
 
-###Technology Stack
+### Technology Stack
 
 **Backend:** Node.js, Express.js
 
@@ -18,7 +18,7 @@ CUET CLUBS is a web platform that combines the various club websites under the o
 
 **Frontend:** HTML, CSS, JavaScript
 
-###Installation
+### Installation
 
 **Clone the repository:**
 
@@ -46,7 +46,7 @@ Copy code:*
 npm start
 Access the platform at http://localhost:3000.
 
-###Usage
+### Usage
 **Club Admins:**
 
 Sign up as a club admin to create a new club website.
@@ -57,8 +57,8 @@ View all club websites without the need to log in.
 **Website Admin:**
 
 Add or delete clubs as needed.
-###Contributing
+### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-###License
+### License
 This project is licensed under the MIT License.
