@@ -1,4 +1,4 @@
-##CUET CLUBS##
+##CUET CLUBS
 CUET CLUBS is a web platform that combines the various club websites under the organization CUET (Chittagong University of Engineering & Technology). Built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript, the platform allows CUET clubs to create, manage, and display their own websites in a unified manner.
 
 Features
