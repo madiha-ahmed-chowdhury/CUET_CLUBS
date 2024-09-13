@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+ 
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, rgb(43, 43, 156), #0a1241, #0a1241);
+    background-size: 100%;
+    
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+/* General styling */
+
+
+.navbar {
+    background-color: #0d0d0d; /* Blackish navbar */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Brand logo */
+.navbar .logo {
+    margin-left: -190px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation links */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .nav-links li {
+    position: relative;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effects for links */
+.navbar .nav-links a:hover {
+    color: #00d9ff; /* Neon blue on hover */
+}
+
+.navbar .nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #00d9ff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar .nav-links a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+/* Responsive: Ensure links are centered in mobile view */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Add a subtle shadow to the navbar when scrolling */
+.navbar.scrolled {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease;
+}
+
+.fa-brands{
+    color: white
+}
+.carding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000; /* Black border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    background-color: #080808; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 250px; /* Fixed width */
+    margin: 20px auto; /* Centered horizontally */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.carding:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.name1 {
+    font-size: 24px; /* Larger font size for name */
+    font-weight: 700; /* Bold text */
+    color: #ffffff; /* Dark grey text */
+    margin-bottom: 10px; /* Space below the name */
+}
+
+.post {
+    font-size: 18px; /* Slightly smaller font size for position */
+    font-weight: 500; /* Semi-bold text */
+    color: #ffffff; /* Medium grey text */
+    margin-bottom: 20px; /* Space below the position */
+}
+
+.three_in_a_row {
+    display: flex;
+    justify-content: space-around; /* Space between items */
+    width: 100%; /* Full width of the container */
+}
+
+/* Add additional styles for items in three_in_a_row if needed */
+
+
+.name-icon {
+    font-size: 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background-color: #fff; /* White background */
+    border: 1px solid #333; /* Darker border */
+    color: #333; /* Darker text */
+    padding: 8px 12px; /* Adjusted padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; /* Slightly larger font size */
+    margin: 4px; /* Increased margin */
+    cursor: pointer;
+    border-radius: 6px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f5f5f5; /* Light grey on hover */
+    transform: scale(1.05); /* Slightly larger button */
+}
+
+.form-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.new-member {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #666; /* Darker grey */
+}
+
+input {
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    margin-bottom: 20px; /* Increased margin */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box;
+}
+
+#submit-new {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px 20px; /* Increased padding */
+    cursor: pointer;
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px;
+    width: 100%;
+}
+
+#submit-new:hover {
+    background-color: #555; /* Lighter dark background on hover */
+    color: #fff;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   gap: -10px;
+    padding: 20px;
+}
+
+.image {
+    border: 2px solid #333; /* Darker border */
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Footer bottom styling */
+.footer-bottom {
+    position: relative; /* Change this from absolute to relative */
+    bottom: 0;
+    width: 100%;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #b4b3cbd7;
+}
+
+.social-icons {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin-top: 5px;  /* Reduced margin */
+}
+
+.social-icons li {
+    margin: 0 8px;
+}
+
+.social-icons li a {
+    color: #b4b3cbd7;
+    font-size: 14px;  /* Smaller icon size */
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #f4f4f4;
+}
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-bottom ul li {
+    margin: 0 15px;
+}
+
+.footer-bottom ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+/* Adding distance between body content and footer */

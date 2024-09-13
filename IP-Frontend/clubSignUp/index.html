@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Club Signup</h2>
+        <form id="signupForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="clubname">Club Name</label>
+                <input type="text" id="clubname" name="clubname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="about">About</label>
+                <textarea id="about" name="about"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload Image</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div class="form-group">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone_number" name="phone_number">
+            </div>
+            <div class="form-group">
+                <label for="mailing_address">Mailing Address</label>
+                <input type="text" id="mailing_address" name="mailing_address">
+            </div>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
