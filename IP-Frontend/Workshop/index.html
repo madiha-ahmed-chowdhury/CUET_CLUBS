@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Workshop</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="../homepage/index.html"><i class="fa-solid fa-house"></i></a>
+      <div class="logo" id="clubname">BrandName</div>
+      <ul class="nav-links">
+          <li><a href="../committee/index.html">Committee</a></li>
+          <li><a href="../clubHomePage/index.html#clubDescription">About</a></li>
+  
+          <li><a href="../Workshop/index.html">Workshops</a></li>
+          <li><a href="../events/index.html">Events</a></li>
+          <li><a href="../clubHomePage/index.html#contact">Contact</a></li>
+      </ul>
+      
+  </nav>
+
+    <div class="container">
+      <div id="cardContainer" class="d-flex flex-wrap">
+        <!-- Dynamic cards will be appended here -->
+        
+      </div>
+      <!-- <button id="addCard" class="btn btn-primary edit-button">
+      <i class="fa-solid fa-plus"></i> Add Card
+    </button> -->
+      <form id="create-workshop-form">
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Workshop Title"
+        /><br />
+        <input type="file" id="image" name="image"/><br/>
+        <div id="mentor-list">
+          <input type="text" name="mentorList"  />
+          <button type="button" onclick="addMentorField()">Add Mentor</button
+          ><br />
+        </div>
+        <div id="video-link-list">
+          <input type="text" name="videoLinkList"  />
+          <button type="button" onclick="addVideoLinkField()">
+            Add Video Link</button
+          ><br />
+        </div>
+        <button type="submit">Create Workshop</button>
+      </form>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 CUET Clubs. All Rights Reserved.</p>
+      <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+  </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Workshop 1</h5>
+      <p class="card-text">The workshop title and description</p>
+      <a href="#" class="btn btn-primary">READ MORE</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Workshop 2</h5>
+      <p class="card-text">The workshop title and description</p>
+      <a href="#" class="btn btn-primary">READ MORE</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Workshop 3</h5>
+      <p class="card-text">The workshop title and description</p>
+      <a href="#" class="btn btn-primary">READ MORE</a>
+    </div>
+  </div>
+  <button class="load-more">Load more</button> -->

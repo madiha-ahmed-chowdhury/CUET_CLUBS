@@ -1,0 +1,139 @@
+/* Body and general settings */
+body {
+    background: linear-gradient(135deg, #1a2a6c, #2d80af, #2f43b5);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Card design - consistent for both club and temp-card-item */
+.card-item , .temp-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-item:hover, .temp-card-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+.card-item .club-name , .temp-card-item .temp-club-name {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Button styles */
+.edit-button, .delete-btn, .temp-delete-btn, .temp-approve-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.edit-button:hover, .delete-btn:hover, .temp-delete-btn:hover, .temp-approve-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.delete-btn, .temp-delete-btn {
+    background-color: #ff4c4c !important;;
+    border: none;
+    
+}
+
+.delete-btn:hover, .temp-delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.temp-approve-btn {
+    background-color: #4caf50;
+    border: none;
+}
+
+.temp-approve-btn:hover {
+    background-color: #45a049;
+}
+
+/* Logout button */
+#logOut {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: #000205;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.1s;
+}
+
+#logOut:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#logOut:active {
+    background-color: #444;
+    transform: scale(0.9);
+}
+
+/* Header and footer */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}

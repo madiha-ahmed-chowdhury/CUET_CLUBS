@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(90deg, rgb(43, 43, 156), #0a1241, #0a1241);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+    
+}
+.main {
+  flex-grow: 1; /* This makes sure the main content area grows to fill the space */
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    padding-bottom: 50px; 
+    display: flex;
+    flex-direction: column;
+}
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-grow: 1; /* Ensures the main content grows to push the footer down */
+}
+.navbar {
+  background-color: #0d0d0d; /* Blackish navbar */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Brand logo */
+.navbar .logo {
+  margin-left: -190px;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar .logo:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation links */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .nav-links li {
+  position: relative;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effects for links */
+.navbar .nav-links a:hover {
+  color: #00d9ff; /* Neon blue on hover */
+}
+
+.navbar .nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #00d9ff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar .nav-links a:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+/* Responsive: Ensure links are centered in mobile view */
+@media (max-width: 991px) {
+  .navbar-nav {
+      text-align: center;
+      margin-top: 1rem;
+  }
+  .navbar-nav .nav-item {
+      margin-bottom: 1rem;
+  }
+}
+
+/* Add a subtle shadow to the navbar when scrolling */
+.navbar.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: box-shadow 0.3s ease;
+}
+
+.fa-brands{
+  color: white
+}
+/* Container for Cards */
+#cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+/* Card Styles */
+/* Card Styles Update */
+.card-item {
+  width: 310px; /* Increased width */
+  height: 400px; /* Increased height */
+  background-color: #000000;
+  color: white;
+  border-radius: 12px; /* Rounded corners */
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px; /* Padding for a balanced look */
+  margin-bottom: 20px;
+  background: linear-gradient(145deg, #1e1e2c, #12122a); /* Gradient to match the first card */
+}
+
+
+.card-item:hover {
+  transform: scale(1.2);
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f9f9f9;
+}
+
+.description {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+/* Buttons inside the card */
+.card-item .btn-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.card-item button {
+  border: none;
+  border-radius: 4px;
+  /* color: #ffffff; */
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+.go-btn {
+  background-color: #000000 !important; /* Changed button color to a vibrant orange */
+  color: #ffffff !important; /* Set text color to white */
+  border-radius: 5px !important; /* Added some rounding for a softer look */
+  transition: background-color 0.3s ease !important; /* Smooth transition effect */
+}
+
+.go-btn:hover{
+  transform: translateY(-5px);
+  background-color: #218838;
+}
+
+/* Specific button styles */
+.edit-btn {
+  background-color: #28a745;
+  color: #fcf9f9;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* Footer Styles */
+.footer-bottom {
+  background-color: #0d0d0d;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  width: 100%;
+  position: relative; /* Changed from absolute to relative */
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #b4b3cbd7;
+}
+
+.social-icons {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin-top: 5px;  /* Reduced margin */
+}
+
+.social-icons li {
+  margin: 0 8px;
+}
+
+.social-icons li a {
+  color: #b4b3cbd7;
+  font-size: 14px;  /* Smaller icon size */
+  transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+  color: #f4f4f4;
+}
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-bottom ul li {
+  margin: 0 15px;
+}
+
+.footer-bottom ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+/* Adding distance between body content and footer */
+
+.hidden{
+  display: none;
+}

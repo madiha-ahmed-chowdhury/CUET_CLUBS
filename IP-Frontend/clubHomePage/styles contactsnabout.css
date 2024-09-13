@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #090329;
+}
+
+.navbar {
+  background-color: #000000;
+  list-style: none;
+  height: 7rem;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px;
+}
+
+.navbar-brand {
+  color: #0531c1;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  border: radius 3px;
+  text-decoration: none;
+
+}
+
+a.active,
+a:hover {
+  background: #f9f9f962;
+  transition: 0.5s;
+}
+
+.container {
+  height: 55vh;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  background-size: contain;
+  background-clip: padding-box;
+  background-color: rgba(250, 250, 204, 0.3);
+  text-align: right;
+  color: #333;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 140px;
+  background-color: black;
+  z-index: -1;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 45px;
+  color: rgb(147, 161, 172);
+
+
+}
+
+h2 {
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.para::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 140px;
+  background-color: black;
+  z-index: -1;
+}
+
+.register-now {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.register-now::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 20px;
+  background-color: black;
+  border: 1px solid rgb(30, 28, 28);
+  padding: 10px;
+  text-align: center;
+  z-index: -1;
+}
+
+.contact button {
+  height: 30px;
+  width: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
