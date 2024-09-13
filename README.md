@@ -3,15 +3,25 @@ CUET CLUBS is a web platform that combines the various club websites under the o
 
 Features
 Club Admin Registration: Club admins can sign up to create and manage their club's website.
+
 Club Admin Login: Once signed up, club admins can log in to update and edit their club information, including events, workshops, and more.
+
 Public Access: Regular users can view the website without needing to log in. All club information is available for public viewing.
+
 Website Admin: A dedicated website admin has the authority to add new clubs or delete existing clubs from the platform.
+
 Technology Stack
+
 Backend: Node.js, Express.js
+
 Database: MongoDB
+
 Frontend: HTML, CSS, JavaScript
+
 Installation
+
 Clone the repository:
+
 
 bash
 Copy code
