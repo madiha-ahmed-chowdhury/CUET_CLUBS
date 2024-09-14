@@ -1,0 +1,100 @@
+body {
+    background: url('images/pexels-cottonbro-6491956.jpg') no-repeat left bottom;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-box {
+    width: 30rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    position: relative;
+    padding: 50px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.login-box h2 {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-box input {
+    width: 90%;
+    padding: 10px 15px 10px 0px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.user-box input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #007bff;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px; /* Reduced space between the input and the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3a3f59, #0d1647);
+    color: #faf8f8;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+
+.login-box button:hover {
+    background: linear-gradient(135deg, #007bff, #00f);
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #ccc;
+    margin-top: 20px;
+    display: block;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.login-box a:hover {
+    color: #fff;
+}
+.login-box a:hover{
+    color:#2823c8;
+
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 12px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 0.85rem;
+}
