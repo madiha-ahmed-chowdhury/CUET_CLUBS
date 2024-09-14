@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.up-container {
+  height: 65vh;
+  background-image: url(./images/homepageBG.jpg);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.writings {
+  position: absolute;
+  margin-top: 30vh;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: aliceblue;
+}
+
+.writings p {
+  margin: 0;
+  font-size: 20px;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.slides-container {
+  position: relative;
+  width: 70%;
+  height: 30vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  overflow: hidden;
+  align-items: center;
+}
+
+.slides {
+  /* width: 100%;
+  height: 100%; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  /* display: none; */
+  align-items: center;
+}
+
+.visible-coming-from-left {
+  display: block;
+  animation: slide-in-from-left 0.7s ease-out forwards;
+}
+
+.visible-coming-from-right {
+  display: block;
+  animation: slide-in-from-right 0.7s ease-out forwards;
+}
+
+/* Slide-in from left animation */
+@keyframes slide-in-from-left {
+  0% {
+    transform: translateX(-100vw); /* Start from the full width of the viewport to the left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Move to its final position */
+    opacity: 1;
+  }
+}
+
+/* Slide-in from right animation */
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateX(100vw); /* Start from the full width of the viewport to the right */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Move to its final position */
+    opacity: 1;
+  }
+}
+
+
+/* Slide-out animation */
+/* Slide-out to left animation */
+.slide-out-to-left {
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+/* Slide-out to right animation */
+.slide-out-to-right {
+  transform: translateX(100%);
+  transition: transform 0.1s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+.clubs {
+  display: flex;
+  align-items: center;
+}
+
+.clubs img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.clubs .text {
+  flex: 1;
+  margin-left:6vw;
+}
+
+.clubs .text h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.clubs .text p {
+  margin-top: 3vh;
+  font-size: 15px;
+}
+
+.down {
+  display: flex; /* Use flexbox to align children */
+  width: 100vw;
+}
+
+#nextBtn {
+  height: 50px;
+  width:50px;
+  margin-top: 10vh;
+  border-radius: 100%;
+  margin-right: 7vw;
+  font-size: 24px;
+  color: rgb(26, 26, 163);
+  border-color: rgb(26, 26, 163);
+}
+
+#prevBtn {
+  height: 50px;
+  width:50px;
+  margin-top: 10vh;
+  border-radius: 100%;
+  margin-left: 7vw;
+  font-size: 24px;
+  color: rgb(26, 26, 163);
+  border-color: rgb(26, 26, 163);
+}
+
+.drawer {
+  position: absolute;
+  top: 0;
+  /* left: -300px;  */
+  /* Initial position off-screen */
+  width: 20vw;
+  height: 100%;
+  line-height: 2;
+  padding-left: 20px;
+  background-color: #01010152;
+  /* transition: left 0.3s ease; */
+  /* //z-index: 1; */
+  opacity: 0.9;
+  color: white;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.toggle-btn {
+  display: block;
+  margin-bottom: 20px;
+  margin-left:17.5vw;
+  height:40px;
+  width: 38px;
+  font-size: 30px; 
+}
+
+.toggle-btn2{
+  margin-bottom: 20px;
+  border: none;
+  margin-left:17.5vw;
+  height:40px;
+  width: 38px;
+  font-size: 30px; 
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.container{
+  position:relative;
+  margin-left: 80vw;
+}
+.clubList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Increase gap between club items */
+  margin-top: 20px; /* Distance from top elements */
+}
+
+.clubList h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.club-title{
+  margin-left: 2.5vw;
+}
+
+.club-title h2{
+  font-size: 50px;
+}
+
+.club-title p{
+  font-size: 20px;
+}
+
+.foo {
+  color: #fff;
+  padding: 20px;
+  padding-top: 0 !important;
+  text-align: center;
+  position: fixed;
+  align-items: center;
+  bottom: 0;
+  margin-left: 120px;
+  margin-top: 50 vh;
+  font-size: 50px;
+  display: flex;
+  justify-items: center;
+}
+
+.login{
+  height: 100%;
+  margin-left: 75px; /* Reduced margin-left to move it to the left */
+  position: relative;
+  left: -10px;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.slides:hover{
+  color:rgba(118, 7, 7, 0.861);
+  cursor: pointer;
+}
