@@ -30,6 +30,7 @@ const fetchClubInfo = async () => {
     document.getElementById("clubemail").textContent = club.email;
     document.getElementById("address").textContent = club.mailing_address;
     document.getElementById("number").textContent = club.phone_number;
+    document.getElementById("clubDescription").textContent = club.about;
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

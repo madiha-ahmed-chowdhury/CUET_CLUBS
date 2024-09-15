@@ -1,7 +1,7 @@
 const token = localStorage.getItem("token");
 console.log(token);
 if(!token){
-  window.location.href = '../adminlogin/index.html';
+  window.location.href = '../homepage/index.html';
 }
 
 //deleteing existing club
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // document.addEventListener("DOMContentLoaded", fetchingTempClubs());
 
 const getout=()=>{
-  window.location.href = '../adminlogin/index.html';
+  window.location.href = '../homepage/index.html';
 }
 document.getElementById("logOut").addEventListener('click',()=>{
   localStorage.clear();

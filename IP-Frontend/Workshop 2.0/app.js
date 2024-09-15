@@ -1,5 +1,5 @@
 const workshopId = localStorage.getItem('idOfWorkshop');
-const clubname=localStorage.getItem("club_name");
+const clubname = localStorage.getItem("club_name");
 document.getElementById("clubname").innerHTML = clubname;
 const token = localStorage.getItem('token');
 
@@ -134,6 +134,7 @@ async function fetching() {
 
             const editButton = document.createElement("button");
             editButton.textContent = "Edit";
+            editButton.classList.add("btn-primary");
             // editButton.addEventListener("click", () => {
             //     const newTitle = prompt("Enter the new title of the video", videoLink.title);
             //     const newSrc = prompt("Enter the new source URL of the video", videoLink.src);
@@ -156,6 +157,7 @@ async function fetching() {
 
             const deleteButton = document.createElement("button");
             deleteButton.textContent = "Delete";
+            deleteButton.classList.add("btn-primary");
             // deleteButton.addEventListener("click", () => {
             //     deleteVideo(videoLink);
             //     videoContainer.removeChild(videoDiv); // Remove the video container from DOM
@@ -163,15 +165,17 @@ async function fetching() {
             deleteButton.addEventListener('click', () => {
                 deleteVideoLink(workshopId, index);
             })
-            if(token)
-            { videoDiv.appendChild(deleteButton); }
+            if (token) { videoDiv.appendChild(deleteButton); }
 
             const br = document.createElement("br");
             videoDiv.appendChild(br);
 
             const iframe = document.createElement("iframe");
-            iframe.src = videoLink;
+            iframe.src = videoLink.replace("watch?v=", "embed/"); // Convert YouTube link to embeddable format
+            iframe.width = "560";
+            iframe.height = "315";
             iframe.frameBorder = "0";
+            iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
             iframe.allowFullscreen = true;
             videoDiv.appendChild(iframe);
 
@@ -188,8 +192,8 @@ async function fetching() {
 document.addEventListener("DOMContentLoaded", fetching());
 
 
-const add=document.getElementById("add");
-if(!token){
+const add = document.getElementById("add");
+if (!token) {
     add.classList.add("hidden");
 }
 add.addEventListener('click', () => {
